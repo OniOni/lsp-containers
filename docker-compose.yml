@@ -1,0 +1,13 @@
+services:
+  pylsp:
+    image: mat-lsp-pylsp
+    ports:
+      - 8888:3000
+    deploy:
+      replicas: 1
+  starlark-lsp:
+    image: mat-lsp-starlark
+    ports:
+      - 8889:3000
+    deploy:
+      replicas: 1
